@@ -1,3 +1,5 @@
+// Animations
+// Select element function
 const selectElement = function (element) {
   return document.querySelector(element);
 };
@@ -9,6 +11,7 @@ menuToggler.addEventListener("click", function () {
   body.classList.toggle("open");
 });
 
+// Scroll reveal
 window.sr = ScrollReveal();
 
 sr.reveal(".animate-left", {
@@ -39,6 +42,7 @@ sr.reveal(".animate-bottom", {
   delay: 600,
 });
 
+// Slider
 const a = document.getElementsByClassName("slider-a");
 const cfImg = document.getElementsByClassName("coverflow__image");
 
@@ -88,18 +92,22 @@ function setupCoverflow(coverflowContainer) {
     const coverflow = {};
     let prevArrows, nextArrows;
 
+    // Capture coverflow elements
     coverflow.container = containerElement;
     coverflow.images = Array.prototype.slice.apply(
       containerElement.getElementsByClassName("coverflow__image")
     );
     coverflow.position = Math.floor(coverflow.images.length / 2) + 1;
 
+    // Set indicies on images
     coverflow.images.forEach(function (coverflowImage, i) {
       coverflowImage.dataset.coverflowIndex = i + 1;
     });
 
+    // Set initial position
     coverflow.container.dataset.coverflowPosition = coverflow.position;
 
+    // Get prev/next arrows
     prevArrows = Array.prototype.slice.apply(
       coverflow.container.getElementsByClassName("prev-arrow")
     );
@@ -107,6 +115,7 @@ function setupCoverflow(coverflowContainer) {
       coverflow.container.getElementsByClassName("next-arrow")
     );
 
+    // Event handlers
     function setPrevImage() {
       coverflow.position = Math.max(1, coverflow.position - 1);
       coverflow.container.dataset.coverflowPosition = coverflow.position;

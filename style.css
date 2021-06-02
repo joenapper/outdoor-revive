@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap");
 
+/*Global Styles*/
 *,
 *::before,
 *::after {
@@ -53,6 +54,7 @@ p {
   padding: 0 2.4rem;
 }
 
+/* Header / Nav */
 header {
   width: 100%;
   position: absolute;
@@ -157,6 +159,7 @@ header {
   margin-right: -2px;
 }
 
+/* Hero */
 .hero {
   width: 100%;
   height: 100vh;
@@ -281,6 +284,7 @@ header {
   background-color: var(--secondary-font-color);
 }
 
+/* Our Story */
 .global-headline {
   text-align: center;
   margin-top: 3.9rem;
@@ -344,6 +348,7 @@ header {
   background-color: var(--main-font-color-dark);
 }
 
+/* Slider */
 .slider-container {
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(/images/gallery-4.jpg) center no-repeat;
@@ -1358,6 +1363,7 @@ header {
   }
 }
 
+/* Our Services */
 .image-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1369,6 +1375,7 @@ header {
   margin-bottom: 0;
 }
 
+/* Footer  */
 footer {
   padding: 7.9rem 0;
   background-color: #121212;
@@ -1439,6 +1446,7 @@ footer {
   color: var(--secondary-font-color);
 }
 
+/* Media Queries */
 @media screen and (min-width: 900px) {
   section {
     padding: 7.9rem;
@@ -1537,6 +1545,7 @@ footer {
   }
 }
 
+/*Animations*/
 @keyframes fadeUp {
   0% {
     transform: translateY(4rem);
