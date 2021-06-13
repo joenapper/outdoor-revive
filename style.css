@@ -151,7 +151,6 @@ header {
 }
 
 .nav-link {
-  /* display: block;*/
   color: var(--secondary-font-color);
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -286,17 +285,13 @@ header {
 
 /* Our Story */
 .global-headline {
+  color: var(--body-font-color);
   text-align: center;
   margin-top: 3.9rem;
 }
 
-.discover-our-story .global-headline {
+.our-story-description .global-headline {
   margin-top: 6.9rem;
-}
-
-.global-headline {
-  color: var(--body-font-color);
-  margin: 2.4rem 0;
 }
 
 .headline-dark {
@@ -1252,8 +1247,6 @@ header {
 
   .coverflow[data-coverflow-position="2"]
     .coverflow__image[data-coverflow-index="1"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1262,8 +1255,6 @@ header {
 
   .coverflow[data-coverflow-position="3"]
     .coverflow__image[data-coverflow-index="2"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1272,8 +1263,6 @@ header {
 
   .coverflow[data-coverflow-position="4"]
     .coverflow__image[data-coverflow-index="3"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1282,8 +1271,6 @@ header {
 
   .coverflow[data-coverflow-position="5"]
     .coverflow__image[data-coverflow-index="4"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1292,8 +1279,6 @@ header {
 
   .coverflow[data-coverflow-position="6"]
     .coverflow__image[data-coverflow-index="5"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1302,8 +1287,6 @@ header {
 
   .coverflow[data-coverflow-position="7"]
     .coverflow__image[data-coverflow-index="6"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1312,8 +1295,6 @@ header {
 
   .coverflow[data-coverflow-position="8"]
     .coverflow__image[data-coverflow-index="7"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1322,8 +1303,6 @@ header {
 
   .coverflow[data-coverflow-position="9"]
     .coverflow__image[data-coverflow-index="8"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1332,8 +1311,6 @@ header {
 
   .coverflow[data-coverflow-position="10"]
     .coverflow__image[data-coverflow-index="9"] {
-    /* -webkit-transform: translateX(-610px) scale(0.65) rotateY(45deg);
-    transform: translateX(-610px) scale(0.65) rotateY(45deg); */
     -webkit-transform: scale(0.65) rotateY(45deg);
     transform: scale(0.65) rotateY(45deg);
     transform-origin: left;
@@ -1368,11 +1345,6 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
-}
-
-.discover-our-story .restaurant-description {
-  padding-top: 3rem;
-  margin-bottom: 0;
 }
 
 /* Footer  */
