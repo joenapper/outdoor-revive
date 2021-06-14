@@ -42,6 +42,15 @@ sr.reveal(".animate-bottom", {
   delay: 600,
 });
 
+// Contact
+document.getElementById("contact").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "flex";
+});
+
+document.querySelector(".close").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "none";
+});
+
 // Slider
 const a = document.getElementsByClassName("slider-a");
 const cfImg = document.getElementsByClassName("coverflow__image");
