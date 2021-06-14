@@ -343,6 +343,65 @@ header {
   background-color: var(--main-font-color-dark);
 }
 
+/* Contact */
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content {
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 5rem;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.contact-us-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.contact-form input {
+  width: 60%;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid var(--main-font-color-dark);
+  color: var(--main-font-color-dark);
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: var(--secondary-font-color);
+  border: 1px solid var(--main-font-color-dark);
+  color: var(--main-font-color-dark);
+}
+
 /* Slider */
 .slider-container {
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
