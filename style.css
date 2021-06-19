@@ -402,6 +402,24 @@ header {
   color: var(--main-font-color-dark);
 }
 
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader svg {
+  height: 80px;
+  width: 80px;
+}
+
+.loader svg path,
+.loader svg rect {
+  fill: var(--secondary-font-color);
+}
+
 /* Slider */
 .slider-container {
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),

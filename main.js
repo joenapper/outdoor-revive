@@ -58,6 +58,9 @@ document.querySelector(".close").addEventListener("click", function () {
 
 // Sends Form
 function sendMail(contactForm) {
+  document.getElementById("submit").disabled = true;
+  document.querySelector(".loader").style.display = "inline-block";
+
   emailjs
     .send("gmail", "outdoor-revive", {
       from_name: contactForm.name.value,
