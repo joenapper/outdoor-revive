@@ -4,10 +4,13 @@ const selectElement = function (element) {
   return document.querySelector(element);
 };
 
-let menuToggler = selectElement(".menu-toggle");
-let body = selectElement("body");
+const body = selectElement("body");
 
-menuToggler.addEventListener("click", function () {
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+  body.classList.toggle("open");
+});
+
+document.querySelector(".nav-list").addEventListener("click", function () {
   body.classList.toggle("open");
 });
 
