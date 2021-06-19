@@ -42,7 +42,7 @@ sr.reveal(".animate-bottom", {
   delay: 600,
 });
 
-// Contact
+// Contact Modal
 document.getElementById("contact").addEventListener("click", function () {
   document.querySelector(".bg-modal").style.display = "flex";
   document.body.style.overflow = "hidden";
@@ -52,6 +52,25 @@ document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".bg-modal").style.display = "none";
   document.body.style.overflow = "visible";
 });
+
+// Sends Form
+function sendMail(contactForm) {
+  emailjs
+    .send("gmail", "outdoor-revive", {
+      from_name: contactForm.name.value,
+      from_number: contactForm.number.value,
+    })
+    .then(
+      function (response) {
+        console.log("success", response);
+        location.reload();
+      },
+      function (error) {
+        console.log("failed", error);
+      }
+    );
+  return false;
+}
 
 // Slider
 const a = document.getElementsByClassName("slider-a");

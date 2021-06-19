@@ -358,11 +358,11 @@ header {
 
 .modal-content {
   width: 500px;
-  height: 300px;
+  max-width: 90%;
   background-color: #fff;
   border-radius: 4px;
   text-align: center;
-  padding: 20px;
+  padding: 4rem;
   position: relative;
 }
 
