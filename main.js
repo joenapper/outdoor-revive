@@ -11,7 +11,9 @@ document.querySelector(".menu-toggle").addEventListener("click", function () {
 });
 
 document.querySelector(".nav-list").addEventListener("click", function () {
-  body.classList.toggle("open");
+  if (body.classList.contains("open")) {
+    body.classList.toggle("open");
+  }
 });
 
 // Scroll reveal
